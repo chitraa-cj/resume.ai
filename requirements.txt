@@ -1,0 +1,14 @@
+streamlit
+pdfplumber
+spacy
+openai
+python-dotenv
+
+# Required for NLP
+PyMuPDF
+
+# Development and testing
+pytest
+
+# NLP model (download separately)
+# python -m spacy download en_core_web_sm
