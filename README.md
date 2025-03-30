@@ -23,11 +23,11 @@ A powerful AI-powered tool that helps you analyze and optimize your resume for A
 - **PDF Processing**:
   - pdfplumber
   - PyMuPDF
-- **Environment Management**: python-dotenv
+- **Environment Management**: Conda
 
 ## 📋 Prerequisites
 
-- Python 3.7+
+- Conda installed ([Miniconda](https://docs.conda.io/en/latest/miniconda.html) recommended)
 - OpenAI API key
 - Internet connection for AI features
 
@@ -40,11 +40,11 @@ git clone https://github.com/yourusername/resume-ai.git
 cd resume-ai
 ```
 
-2. Create and activate a virtual environment:
+2. Create and activate a Conda environment:
 
 ```bash
-python -m venv venv
-source venv/bin/activate  # On Windows: venv\Scripts\activate
+conda create --name resume-ai-env python=3.9
+conda activate resume-ai-env
 ```
 
 3. Install dependencies:
@@ -107,21 +107,3 @@ The application uses OpenAI's GPT-4 model to:
 - Your resume data is processed locally
 - OpenAI API calls are made securely
 - No resume data is stored permanently
-
-## 📝 License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
-
-## 🤝 Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
-
-## 📞 Support
-
-For support, please open an issue in the GitHub repository or contact the maintainers.
-
-## 🙏 Acknowledgments
-
-- OpenAI for providing the GPT-4 API
-- The Streamlit team for the amazing framework
-- The open-source community for various libraries used in this project
